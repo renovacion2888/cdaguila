@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/menuflotate.css">
+	<link rel="stylesheet" type="text/css" href="css/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    @keyframes banner{0%,22%{background-image: url(img/colage2.jpg);opacity: 1;}23%,24%{opacity: 0.1;}25%,47%{background-image: url(img/colage3.jpg);opacity: 1;}48%,49%{opacity: 0.1;}50%, 67%{background-image: url(img/colage.jpg);opacity: 1;}70%, 100%{background-image: url(img/encuentro.jpg);opacity: 1;}
+ 	 </style>
+</head>
+<div class="padre">
+<body>
+	<div class="smartphone">
+		<div class="menu ">
+			<header>
+				<div class="menu_nav">
+					<a href="#" class="btn_menu ">
+						<img src="img/escudo_logo.png " class="logo1" alt="logo" style="width:45px; height: 45px;">
+	                   		<span class="icon-list2  glyphicon glyphicon-menu-hamburger">
+	                   		</span>
+	                 </a>
+				</div>
+				<nav>
+					<ul>
+						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home "></span> Inicio</a></li>
+						<li class="material-icons"><a href="historia.html"><span class="glyphicon glyphicon-user" ></span>Historia</a></li>
+						<li><a href="galeria.html"><span class="glyphicon glyphicon-camera"></span class	> Fotos </a></li>
+						<li><a href="#"><span class="	glyphicon glyphicon-facetime-video"></span> Videos</a></li>
+						<li><a href="#"><span class="	glyphicon glyphicon-envelope"></span> Contacto</a></li>
+					</ul>	
+				</nav>
+			</header>
+			<div class="logo">
+				<img src="img/escudo_logo.png" class="logo2" alt="logo" >
+				
+				</div>
+			<div class="texto-aguila">
+				<h3>
+					<p>Club Deportivo Aguila</p>
+				</h3>
+			</div>
+		</div>
+	</div>
+<div class="relleno"></div>
+<div class="flotante">
+	<input type="checkbox" class="toggle-check" id="toggle" hidden>
+    <label class="toggle" for="toggle"><div class="preloader"></div>Menu</label>
+    <div class="container-menu">
+        <nav class="menu">
+            <a href="index.html" class="item"><span class="glyphicon glyphicon-home"></span>  Inicio</a>
+            <a href="#" class="item"><span class="glyphicon glyphicon-user"></span>  Nosotros</a>
+            <a href="galeria.html" class="item"><span class="glyphicon glyphicon-camera"></span >  Fotos</a>
+            <a href="#" class="item"><span class="glyphicon glyphicon-facetime-video"></span>  Videos</a>
+            <a href="#" class="item"><span class="glyphicon glyphicon-envelope"></span>  Contacto</a>
+        </nav>
+    </div>
+</div>
+<div class="container">			
+<div class="formulario">
+	<div class="orange">	
+	<div class="ovalo">
+	<div class="contenido ">
+		<div class="aviso">
+		<h4>CONTACTANOS</h4>
+		<p>Puedes contactar conmigo en la forma que prefieras, bien directamente por teléfono o email, bien solicitando que sea yo quien te llame gratuitamente, o rellenando el  formulario de contacto. 
+Una vez haya conocido tus necesidades, podré asesorarte y enviarte un presupuesto sin ningún tipo de compromiso. 
+¿Hablamos? </p>
+		</div>
+        	<form action="enviar.php" method="post">
+        		<input type="text" name="Nombre" placeholder="Nombre" required>
+        		<input type="text" name="Correo" placeholder="Correo" required>
+        		<input type="text" name="Telefono" placeholder="Telefono" required><hr>		
+        		<textarea name="Mensaje" placeholder="Escriba su mensaje aca" required></textarea>
+
+        		<input type="button" value="Enviar"	id="boton">
+        	</form>
+ 		</div>
+ 	</div>
+ 	</div>
+ </div>
+</div>
+	<!--//////////////////////////////////este es el footer//////////////////////////////////////////////////////////////-->		
+	<div class="container-fluid">
+			<footer>
+				<div class="col-xs-4 col-sm-4  col-md-4" >
+					<span id="pie">
+	 					 ©Copyrigth 2019 | CLUB DEPORTIVO AGULA | All Rigth Reserved.
+					</span>
+				</div>
+				<div class="col-xs-4 col-sm-4  col-md-4" >
+					<span  >Accesos telefonicos</span>
+						<ol  style="list-style-type:  none; display: inline;">
+							<li><p>2121-2353</p></li>
+							<li><p>2356-2896</p></li>
+							<li><p>2358-5696</p></li>
+						</ol>
+				</div>
+				<div class="col-xs-4 col-sm-4  col-md-4" >
+						<a href=""><img class="img-fluid redesft img-rounded" src="img/Facebook.png"></a>
+						<a href=""><img class="img-fluid redesft img-rounded" src="img/twietter.jpg"></a>	
+						<a href=""><img class="img-fluid redesft img-rounded" src="img/youtube.jpg"></a>
+						<span>Comunicate con nosotros</span>
+				</div>
+			</footer>
+</div>
+</div>
+</body>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="frameworks/js/menu.js"></script>
+	<script>
+		mivideo = document.getElementById('mivideo');
+
+function iniciarypausar(){
+	if (mivideo.paused) {
+		mivideo.play();
+	}else{
+		mivideo.pause();
+	}
+}
+
+function grande(){
+	mivideo.width = 800;
+	mivideo.height = 300;
+}
+function mediano(){
+	mivideo.width = 800;
+	mivideo.height = 350;
+}
+function pequenio(){
+	mivideo.width = 600;
+	mivideo.height = 300;
+}
+	</script>
+</html>

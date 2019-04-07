@@ -1,0 +1,52 @@
+.smartphone{}
+.flotante{
+	position: fixed;
+}
+.nav2{
+		width: 10%;
+		height: 25%;
+		left: -100%;
+		margin: 0;
+		position: fixed;
+		margin-top: -5px;
+		background: rgba(0,0,0,0.5);
+	}
+
+	 .nav2 ul li {
+		display: block;
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255,.5);
+	}
+	.menu2{
+			border: none;
+			margin: 0 0 0 0;
+
+	}
+	/*.menu{
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+	border:2px solid red;
+	position: fixed;
+	margin-bottom: 150px;*/
+	.menu_nav2{
+		display: block;
+		width: 25%;
+		background: #ccc;
+	}
+	.menu_nav2 span{
+		float: right;
+	}
+	.menu_nav2 .btn_menu2{
+		display: block;
+		padding:20px;
+		background: #024959;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 25px;
+		-webkit-box-sizing: border-box ;
+		-moz-box-sizing: border-box ;
+		-o-box-sizing: border-box ;
+	}
+	header nav ul li a:hover{
+	background: rgba(0,0,0,0.6);
+}
